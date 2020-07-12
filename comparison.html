@@ -48,41 +48,49 @@
     </header>
 
     <body>
-        <!--Jumbotron and Project Summary-->
-        <div class="jumbotron">
-            <h1 class="display-4">Latitude vs. X</h1>
-            <p class="lead"><p>This project analyzed world weather data to better understand how weather changes as you approach the equator. Pulling information for 500 different cities from the OpenWeatherMap API provided sufficient data to assemble a reliable dataset and make a well-informed analysis. The specific elements looked at included <strong>temperature, humidity, cloudiness</strong>, and <strong>wind speed</strong>.</p>
-            <b> </b>
-            <p>Look through the data collections found on this website to learn about the final analysis and data engineering process. Is life better around the equator?</p>
-        </div>
-
-        <!--Visualization links-->
+        <!--Page Header and subtext-->
         <div class="container">
             <div class="row">
+                <section id="header">
                 <div class="col-md-12">
-                    <h3>Visualizations</h3><p>Latitude vs. Max Temp, Humidity, Cloudiness, and Wind Speed </p>
+                    <h1>Comparison: Latitude vs. X</h1>
+                </div>
+                </section>
+            </div>
+
+            
+            <div class="row">
+                <section id="comp_paragraph">
+                <div class="col-md-12">
+                    <p>Click any plot to get an in-depth analysis.</p>
+                </div>
+                </section>
+            </div>
+
+            <!--Linked images-->
+            <section id="content">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="max_temp.html">
+                    <img src="Resources/assets/images/Fig1.png" alt="Max Temperature" height=400px width=540px>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="humidity.html">
+                    <img src="Resources/assets/images/Fig2.png" alt="Humidity" height=400px width=540px>
+                    </a>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-3">
-                    <a href="max_temp.html">
-                    <img src="Resources/assets/images/Fig1.png" alt="Max Temperature" height=200px width=300px>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="humidity.html">
-                    <img src="Resources/assets/images/Fig2.png" alt="Humidity" height=200px width=300px>
-                    </a>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <a href="clouds.html">
-                    <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" height=200px width=300px>
+                    <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" height=400px width=540px>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <a href="wind.html">
-                    <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" height=200px width=300px>
+                    <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" height=400px width=540px>
                     </a>
                 </div>
             </div>
@@ -91,4 +99,3 @@
     </body>
       
       </html>
-      

@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: #e9f5ff;
+  }
+  
+#paragraph {
+    position: absolute;
+    top:20%;
+    right: 10%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#content {
+    background-color: white
+}
+
+#header {
+    margin-top: 2%;
+    margin-left:5%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #2c177a7c
+}
+
+#comp_paragraph {
+    margin-left:5%
+}

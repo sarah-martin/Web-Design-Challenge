@@ -4,17 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <title>World Weather Data</title>
-        
-        <!--Bootstrap links-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
-        <!--CSS link-->
+    
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
       
     <header>
-        <!--Navigation bar-->
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4a7899d0;">
             <a class="navbar-brand" href="index.html"><strong>World Weather Data</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,44 +44,51 @@
     </header>
 
     <body>
-        <!--Jumbotron and Project Summary-->
-        <div class="jumbotron">
-            <h1 class="display-4">Latitude vs. X</h1>
-            <p class="lead"><p>This project analyzed world weather data to better understand how weather changes as you approach the equator. Pulling information for 500 different cities from the OpenWeatherMap API provided sufficient data to assemble a reliable dataset and make a well-informed analysis. The specific elements looked at included <strong>temperature, humidity, cloudiness</strong>, and <strong>wind speed</strong>.</p>
-            <b> </b>
-            <p>Look through the data collections found on this website to learn about the final analysis and data engineering process. Is life better around the equator?</p>
-        </div>
-
-        <!--Visualization links-->
+    
         <div class="container">
+            <section id="content">
             <div class="row">
+                <section id="header">
                 <div class="col-md-12">
-                    <h3>Visualizations</h3><p>Latitude vs. Max Temp, Humidity, Cloudiness, and Wind Speed </p>
+                    <h1>Humidity</h1>
                 </div>
+                </section>
+            </div>
+
+            <div class="row">
+                    <div class="col-md-8">
+                        <img src="Resources/assets/images/Fig2.png" alt="Humidity">
+                    </div>
+                    <div class="col-md-4">
+                        <section id= "paragraph">
+                            <p>While there is no strong correlation in this scatter plot, it's possible that the data indicates that there is less variation in humidity along the equator. The datapoints around 0 Latitude are more condensed than throughout the rest of the graph.</p>
+                        </section>   
+                    </div>     
             </div>
 
             <div class="row">
                 <div class="col-md-3">
                     <a href="max_temp.html">
-                    <img src="Resources/assets/images/Fig1.png" alt="Max Temperature" height=200px width=300px>
+                    <img src="Resources/assets/images/Fig1.png" alt="Max Temperature" height=200px width=250px>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="humidity.html">
-                    <img src="Resources/assets/images/Fig2.png" alt="Humidity" height=200px width=300px>
+                    <img src="Resources/assets/images/Fig2.png" alt="Humidity" height=200px width=250px>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="clouds.html">
-                    <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" height=200px width=300px>
+                    <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" height=200px width=250px>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="wind.html">
-                    <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" height=200px width=300px>
+                    <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" height=200px width=250px>
                     </a>
                 </div>
             </div>
+            </section>
         </div>
 
     </body>
